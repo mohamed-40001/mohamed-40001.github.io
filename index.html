@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed El-basiony | Cybersecurity Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #111827;
+            --accent-color: #00ff66;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: #1f2937;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 50px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .tagline {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: var(--accent-color);
+            text-decoration: none;
+            border: 1px solid var(--accent-color);
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--accent-color);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 10px;
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: var(--text-muted);
+        }
+
+        ul li::before {
+            content: ">';";
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skill-item {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            border-radius: 6px;
+            text-align: center;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Section -->
+        <header>
+            <h1>Mohamed El-basiony</h1>
+            <p class="tagline">Cybersecurity & Penetration Testing Enthusiast</p>
+            <div class="social-links">
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="mailto:your-email@example.com">Email Me</a>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section>
+            <h2>About Me</h2>
+            <p>Communications & Computer Engineering student at Mansoura University, specializing in Cybersecurity and Penetration Testing.</p>
+            <p>Hands-on experience in Web & Network Vulnerability Assessment through NTI (EG-CERT/NTRA) and INSTANT Academy. Actively solving practical labs on PortSwigger & TryHackMe and building security scripts.</p>
+            <p>Eager to connect and take on new challenges in Application Security.</p>
+        </section>
+
+        <!-- Core Skills -->
+        <section>
+            <h2>Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-item">Web Penetration Testing</div>
+                <div class="skill-item">Network Security</div>
+                <div class="skill-item">Vulnerability Assessment</div>
+                <div class="skill-item">Burp Suite & Nmap</div>
+                <div class="skill-item">Linux & Bash Scripting</div>
+                <div class="skill-item">Python Automation</div>
+            </div>
+        </section>
+
+        <!-- Training & Experience -->
+        <section>
+            <h2>Training & Experience</h2>
+            <ul>
+                <li><strong>NTI (EG-CERT / NTRA):</strong> Intensive training program in Penetration Testing & Application Security.</li>
+                <li><strong>INSTANT Academy:</strong> Advanced technical training and practical cybersecurity labs.</li>
+            </ul>
+        </section>
+
+        <!-- Practical Labs -->
+        <section>
+            <h2>Labs & Continuous Learning</h2>
+            <ul>
+                <li><strong>PortSwigger Web Security Academy:</strong> Practicing OWASP Top 10 vulnerabilities and advanced web attacks.</li>
+                <li><strong>TryHackMe:</strong> Completing interactive rooms on networking, Linux fundamentals, and pentesting pathways.</li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Mohamed El-basiony. Built for security & impact.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
